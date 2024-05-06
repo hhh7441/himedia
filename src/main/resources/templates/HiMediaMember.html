@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>회원가입 페이지</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+</head>
+<body>
+<div class="layout">
+    <div class="memberContent">
+        <h1><img src="/img/logo.jpg" alt="logo" class="logo"></h1>
+            <form action="/register" method="post" onsubmit="return validateForm()">
+                <div class="memberEnterText">
+                    <ul>
+                        <li><input type="text" id="userId" name="userId" placeholder="아이디">
+                            <button onclick="checkUsernameAvailability(event)"><span>중복확인</span></button>
+                            <div id="userIdAvailability"></div></li>
+                        <li><input type="password" id="password" name="userPw" placeholder="비밀번호">
+                            <div id="userPwAvailability"></div></li>
+                        <li><input type="password" id="passwordCheck" name="pwCheckTextBox" placeholder="비밀번호 재확인">
+                            <div id="userPwCheck"></div></li>
+                        <li><span>회사명</span><input type="text" id="companyTextBox" name="userCompany"></li>
+                        <li><span>이름</span><input type="text" id="nameTextBox" name="userName"></li>
+                        <li><span>연락처</span>
+                            <input type="text" id="mobileTextBox1" name="mobileTextBox1" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                            <input type="text" id="mobileTextBox2" name="mobileTextBox2" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                            <input type="text" id="mobileTextBox3" name="mobileTextBox3" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"></li>
+                        <li><input type="text" id="emailTextBox1" name="emailTextBox1"><span>@</span>
+                            <input type="text" id="emailTextBox2" name="emailTextBox2">
+                            <select id="emailSelectBox" name="emailSelectBox">
+                                <option value="직접입력">직접입력</option>
+                                <option value="daum.net">daum.net</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="naver.com">naver.com</option>
+                            </select></li>
+                    </ul>
+                </div>
+                <div class="memberEnterCheck">
+                    <p>이용약관, 개인정보, 마케팅 수신에 관한 내용을 확인하실 수 있습니다.</p>
+                    <ul>
+                        <li><input type="checkbox" id="enterCheckbox1" name="enterCheckbox1">
+                            <p><span>모두 동의합니다.</span><br>아래의 이용항목에 미 동의 할 권리가 있으나,미 동의 시 서비스 이용에 제한이 있을 수 있습니다.
+                                이는 회원가입 및 서비스 이용 목적으로만 이용되며,외부의 목적이나 요청에 의해 제공되지 않습니다.</p></li>
+                        <li><input type="checkbox" id="enterCheckbox2" name="enterCheckbox2">
+                            <p>이용약관 확인 (필수)</p><a href="#">></a></li>
+                        <li><input type="checkbox" id="enterCheckbox3" name="enterCheckbox3">
+                            <p>개인정보 수집 및 이용 동의 (필수)</p><a href="#">></a></li>
+                        <li><input type="checkbox" id="enterCheckbox4" name="enterCheckbox4">
+                            <p>SNS/이메일 마케팅(할인,이벤트 등) 수신동의 (선택)</p><a href="#">></a></li>
+                    </ul>
+                </div>
+                <div class="memberEnterButton">
+                    <a href="InfoList">취소</a>
+                    <button type="submit">다음</button>
+                </div>
+            </form>
+    </div>
+</div>
+<script src="/js/script.js"></script>
+</body>
+</html>

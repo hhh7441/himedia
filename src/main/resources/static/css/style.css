@@ -1,0 +1,393 @@
+@charset "utf-8";
+@import url(reset.css);
+
+.layout {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    min-width: 1200px;
+}
+
+/**************** 회원정보 입력 css ****************/
+.memberContent {
+    width: 1200px;
+    background-color: #f6f6f6;
+    margin: 0 auto;
+}
+
+.memberContent input,
+.memberContent select {
+    background-color: transparent;
+}
+
+.memberContent h1 {
+    width: 650px;
+    text-align: center;
+    margin: 10px auto;
+    border-bottom: 2px solid #aac6de;
+}
+
+.memberContent h1 img {
+    width: 250px;
+    height: 60px;
+}
+
+.memberEnterText {
+    margin: 0 auto;
+    height: 450px;
+    width: 650px;
+    border-bottom: 2px solid #aac6de;
+}
+
+.memberEnterText ul li button,
+.memberEnterText ul li select {
+    margin-left: 5px;
+    border: 1px solid #000;
+    font-size: 16px;
+    width: 120px;
+    height: 26px;
+}
+
+.memberEnterText ul li {
+    margin: 5px auto;
+    padding: 0px 10px 5px 10px;
+    width: 450px;
+    border-bottom: 2px solid #aac6de;
+    display: flex;
+    align-items: center;
+}
+
+.memberEnterText ul li:nth-child(-n+3) {
+    position: relative; /* 상대 위치 설정 */
+}
+
+.memberEnterText ul li:nth-child(-n+3) > div {
+    position: absolute; /* 절대 위치 설정 */
+    bottom: -25px; /* 아래쪽으로 25px만큼 이동 */
+    left: 10px; /* 왼쪽 정렬 */
+}
+
+.memberEnterText ul li input {
+    padding: 2px 5px;
+    margin-left: 5px;
+    height: 18px;
+    outline: none;
+}
+
+.memberEnterText ul li:nth-child(n+1):nth-child(-n+3){
+    margin-bottom:35px;
+}
+
+.memberEnterText ul li:nth-child(1) input {
+    margin-left:-5px;
+    width: 320px;
+}
+
+.memberEnterText ul li:nth-child(n+2):nth-child(-n+3) input {
+    margin-left:-5px;
+    width: 448px;
+}
+
+.memberEnterText ul li:nth-child(n+4):nth-child(-n+6) span {
+    display: inline-block;
+    margin-reght: 5px;
+    width: 60px;
+    color: #7d848e;
+}
+
+.memberEnterText ul li:nth-child(n+4):nth-child(-n+5) input {
+    width: 370px;
+}
+
+.memberEnterText ul li:nth-child(n+4):nth-child(-n+7) input {
+    border: 1px solid #000;
+}
+
+.memberEnterText ul li:nth-child(6) input {
+    width: 111px;
+}
+
+.memberEnterText ul li:nth-child(7) input {
+    width: 135px;
+}
+
+.memberEnterText ul li:nth-child(7) span {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+/**************** 회원정보 입력 css 종료 ****************/
+
+/**************** 이용약관, 개인정보, 마케팅 수신 체크 css ****************/
+.memberEnterCheck{
+    width: 650px;
+    margin: 0px auto;
+    padding: 10px 0px;
+    border-bottom: 2px solid #aac6de;
+}
+
+.memberEnterCheck > p{
+    margin: 10px 0px;
+    text-align:center;
+}
+
+.memberEnterCheck ul li {
+    margin: 5px auto;
+    width: 530px;
+    display: flex;
+    align-items: center;
+}
+
+.memberEnterCheck ul li p{
+    margin-left:20px;
+    width: 480px;
+}
+
+.memberEnterCheck ul li:nth-child(1) p{
+    padding-top:20px;
+    font-size:14px;
+    color: #7d848e;
+}
+
+.memberEnterCheck ul li:nth-child(1) span{
+    color: #000;
+    font-size:16px;
+}
+
+.memberEnterCheck ul li input{
+    display:inline-block;
+    width: 30px;
+    height: 30px;
+}
+/**************** 이용약관, 개인정보, 마케팅 수신 체크 css 종료 ****************/
+
+/**************** 회원가입 버튼 css ****************/
+.memberEnterButton {
+    width: 650px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.memberEnterButton span{
+    margin-left:10px;
+}
+
+.memberEnterButton form {
+    display: inline-block;
+}
+
+.memberEnterButton a,
+.memberEnterButton button {
+    border: 1px solid #000;
+    width: 180px;
+    height: 40px;
+    font-size: 18px;
+    background-color: #d9d9d9;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/**************** 회원가입 버튼 css 종료 ****************/
+
+/**************** 공지사항 게시판 상단 css ****************/
+.infoContent {
+    width: 1200px;
+    margin: 10px auto;
+}
+
+.infoContent h1{
+    margin-top:10px;
+    float:left;
+}
+
+.member button {
+    color: #7d848e;
+    border: 1px solid #7d848e;
+    border-radius: 5px;
+    padding: 2px 5px;
+    background-color: transparent;
+    margin-left:5px;
+    margin-right:90px;
+}
+
+.member a{
+    margin-right:15px;
+}
+
+.member,
+.menu {
+    text-align: right;
+}
+
+.member p,
+.menu ul {
+    display: inline-block;
+}
+
+.menu ul li {
+    font-size: 20px;
+    margin: 10px 0px 10px 20px;
+    display: inline-block;
+}
+
+.menu ul li a{
+    padding: 5px 10px;
+}
+/**************** 공지사항 게시판 상단 css 종료 ****************/
+
+/**************** 공지사항 게시판 컨텐츠 css ****************/
+.news ul{
+    text-align:right;
+}
+
+.communityTitle ul{
+    margin: 20px 40px 40px 0px;
+}
+
+.communityTitle ul li{
+   display:inline-block;
+}
+
+.communityTitle ul li span{
+   margin-left:5px;
+}
+
+.communityTitle h2{
+    font-size:28px;
+}
+
+.communityTitle p {
+    font-size:20px;
+    margin-bottom:60px;
+}
+
+.communityTitle h2,
+.communityTitle p{
+    text-align:center;
+}
+
+.newsListSelect {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsListSelect select {
+    margin-bottom:10px;
+    width:200px;
+    height:40px;
+    border: 2px solid #000;
+    font-size:12px;
+    padding-left:10px;
+}
+
+.newsListSelect p {
+    text-align: left;
+}
+
+.newsListSelect select {
+    float: right;
+}
+
+.newsList {
+    width:1020px;
+    margin: 0 auto;
+}
+
+.newsList table {
+    border-collapse: collapse;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    text-align:center;
+    font-size:14px;
+    margin-bottom:60px;
+}
+
+.newsList table thead tr th{
+    width:100px;
+}
+
+.newsList table thead tr th:nth-child(3){
+    width:650px;
+}
+
+.newsList table thead tr th{
+    padding: 20px 0px;
+}
+
+.newsList table tbody tr td{
+    padding: 20px 0px;
+    border-top: 1px solid #abafb5;
+}
+
+.newsListNumber {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.newsListNumber a {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    position: relative;
+    padding: 0px 2px;
+}
+
+.newsListNumber a:nth-child(3){
+    font-weight: bold;
+}
+
+.newsListNumber a:nth-child(3)::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #ccc;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.newsListNumber img {
+    margin-bottom:5px;
+}
+
+.newsListSearch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsListSearch select{
+    display:inline-block;
+    width:100px;
+    height:40px;
+    border: 2px solid #ddd;
+    font-size:12px;
+    padding-left:5px;
+}
+
+.newsListSearch p{
+    display: flex;
+    align-items: center;
+    width:350px;
+    height:36px;
+    border: 2px solid #ddd;
+    border-left: none;
+}
+
+.newsListSearch p img{
+    padding: 10px;
+}
+.newsListSearch input{
+    width:320px;
+    height:36px;
+    font-size:12px;
+    padding-left:10px;
+    outline: none;
+}
+/**************** 공지사항 게시판 컨텐츠 종료 css ****************/
